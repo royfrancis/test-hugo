@@ -23,7 +23,7 @@ jobs:
       - name: Define variables
         run: |
           echo "path_repo=$(pwd)" >> $GITHUB_ENV
-          echo "path_export=public" >> $GITHUB_ENV
+          echo "path_export=docs" >> $GITHUB_ENV
           echo "repo=$(echo $GITHUB_REPOSITORY | sed 's/.*\///')" >> $GITHUB_ENV
       - name: Check variables
         run: |
