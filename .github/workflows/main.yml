@@ -55,7 +55,7 @@ jobs:
           git commit -m "Old directory deleted."
 
           cd ${path_repo}
-          cp -r ${path_export}/* tmprepo/
+          cp -r ${path_repo}/${path_export}/* tmprepo/
           cd tmprepo
           echo "Folder contents at $(pwd):"
           ls -lh
